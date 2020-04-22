@@ -13,7 +13,7 @@ function increaseRankBy(n) {
 
   for (let i = 0; children.length > i; i++) {
 
-    children[i] = parseInt(`${children[i]}`) + n
+    children[i] = parseInt(`${children[i]}`, 10) + n
   }
 }
 
