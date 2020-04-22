@@ -11,5 +11,8 @@ function increaseRankBy(n) {
   for (let i = 0; currentRanks.length > i; i++) {
     currentRanks[i] = parseInt(currentRanks[i]) + n
   }
-  return currentRanks
+}
+
+function deepestChild() {
+  
 }
