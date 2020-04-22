@@ -24,11 +24,6 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  var element = document.getElementById('grand-node')
-  var i = 0
-  while (element.firstElementChild) {
-    i = i + 1
-    element = element.firstElementChild
-  }
-  return element.innerHTML
+  var element = document.getElementById('grand-node').querySelectorAll('div')
+  return element[element.length - 1]
 }
