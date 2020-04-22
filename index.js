@@ -8,7 +8,8 @@ function nestedTarget() {
 
 function increaseRankBy(n) {
   const currentRanks = document.getElementsByClassName('ranked-list')
-  const children = currentRanks.children
+  const currentRanks[0] = firstList
+  const children = firstList.children
   for (let i = 0; children.length > i; i++) {
     children[i] = children[i] + n
   }
