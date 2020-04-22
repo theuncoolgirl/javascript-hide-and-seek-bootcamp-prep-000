@@ -11,10 +11,15 @@ function increaseRankBy(n) {
   const firstList = currentRanks[0]
   const secondList = currentRanks[1]
   var firstChildren = firstList.children
+  var secondChildren = secondList.children
 
   for (let i = 0; firstChildren.length > i; i++) {
 
   firstChildren[i].innerHTML = parseInt(firstChildren[i].innerHTML) + n
+  }
+  for (let i = 0; secondChildren.length > i; i++) {
+
+  secondChildren[i].innerHTML = parseInt(secondChildren[i].innerHTML) + n
   }
 }
 
