@@ -7,9 +7,10 @@ function nestedTarget() {
 }
 
 function increaseRankBy(n) {
-  var currentRanks = document.getElementsByClassName('ranked-list.children')
-  for (let i = 0; currentRanks.length > i; i++) {
-    currentRanks[i] = currentRanks[i] + n
+  const currentRanks = document.getElementsByClassName('ranked-list')
+  const children = currentRanks.children
+  for (let i = 0; children.length > i; i++) {
+    children[i] = children[i] + n
   }
 }
 
