@@ -1,6 +1,5 @@
 function getFirstSelector(selector) {
-  var firstSelector = querySelector(selector)
-  return firstSelector
+  document.querySelector(selector)
 }
 
 function netstedTarget() {
