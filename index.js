@@ -28,4 +28,5 @@ function deepestChild() {
   while (element.firstElementChild) {
     element = element.firstElementChild
   }
+  return element.innerHTML
 }
